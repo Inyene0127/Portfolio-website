@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'custom-green': '#13F3A7',
         'custom-light-green': '#0FE1C2',
+        'custom-coral': '#FF7575',
       },
     },
   },
