@@ -6,13 +6,13 @@
                 <p class="ml-5 text-[24px]">Inyene Eduok</p>
             </div>
                 <ul class="list-none text-center">
-                    <li class="inline-block px-5"><a (click)="scrollToSection('home')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Home</a></li>
-                    <li class="inline-block px-5"><a (click)="scrollToSection('about')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">About</a></li>
-                    <li class="inline-block px-5"><a (click)="scrollToSection('education')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Education</a></li>
-                    <li class="inline-block px-5"><a (click)="scrollToSection('skills')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Skills</a></li>
-                    <li class="inline-block px-5"><a (click)="scrollToSection('projects')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Projects</a></li>
-                    <li class="inline-block px-5"><a (click)="scrollToSection('certificates')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Certificates</a></li>
-                    <li class="inline-block px-5"><a (click)="scrollToSection('contact')" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Contact</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('home')" [class.active]="activeSection === 'home'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Home</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('about')" [class.active]="activeSection === 'about'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">About</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('education')" [class.active]="activeSection === 'education'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Education</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('skills')" [class.active]="activeSection === 'skills'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Skills</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('projects')" [class.active]="activeSection === 'projects'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Projects</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('certificates')" [class.active]="activeSection === 'certificates'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Certificates</a></li>
+                    <li class="inline-block px-5"><a (click)="scrollToSection('contact')" [class.active]="activeSection === 'contact'" class="cursor-pointer px-2 no-underline text-stone-500 hover:text-custom-green text-[20px]">Contact</a></li>
                 </ul>
         </nav> 
             <div class="flex items-center justify-between">
@@ -20,7 +20,7 @@
                     <span class="text-[28px]">Welcome to my portfolio</span>
                     <h1 class="text-[58px] mt-5 font-bold leading-tight">HELLO I AM <br>INYENE EDUOK</h1>
                     <p class="text-[24px] mt-5">Web developer, Angular developer, <br>NestJs Enthusiast, Budding 3d designer</p>
-                    <button class="border-solid border-2 border-custom-light-green rounded-[10px] mt-8 p-3 w-56 text-[24px]">CONTACT ME</button>
+                    <button (click)="scrollToSection('contact')"  class="border-solid border-2 border-custom-light-green rounded-[10px] mt-8 p-3 w-56 text-[24px]">CONTACT ME</button>
                 </div>
                 <div class="relative">
                     <img src="assets/img/5934733 1.jpg" class=" w-full" alt="profile pic">

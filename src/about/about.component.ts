@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -6,6 +6,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  // @Input() showScrollTopButton: boolean = false;
 
+  // scrollToTop(): void {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }
+  ngOnInit(): void {}
 }

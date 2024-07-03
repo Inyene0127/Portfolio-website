@@ -9,7 +9,7 @@ import { ProjectComponent } from '../project/project.component';
 import { CertificatesComponent } from '../certificates/certificates.component';
 import { ContactComponent } from '../contact/contact.component';
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'education', component: EducationComponent },
     { path: 'skills', component: SkillComponent },

@@ -29,7 +29,5 @@ export class ContactComponent implements OnInit {
   get message(){
     return this.form.get('message');
   }
-  ngOnInit(): void {
-      
-  }
+  ngOnInit(): void {}
 }
